@@ -16,7 +16,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }
-
+h1{
+  font-size: 3.8rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -33,6 +35,10 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto; 
+  padding-top: 100px; 
+  @media @phone{
+    max-width: 500px;
+    }
 }
 
