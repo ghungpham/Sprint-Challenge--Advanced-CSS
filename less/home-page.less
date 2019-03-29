@@ -3,7 +3,6 @@
 .home {
 
   .intro {
-
     h2 {
       padding: 15px;
     }
@@ -85,7 +84,22 @@
       }
 
       .btn{
+          background: @btn-bg-color;
+          color: white;
+          text-align: center;
+          padding: 8px 0;
+          .btnstyle(32%, 1.9rem);
+          border-radius: 4px;
+          @media @phone{
+          width: 100%;
+          padding: 25px 0;
+          }
+          &:hover {
+              background-color: white;
+              color: @btn-bg-color;
+            }
       }
+  
     }
 
     .walk-img {

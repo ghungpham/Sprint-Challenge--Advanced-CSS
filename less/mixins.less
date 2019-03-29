@@ -8,20 +8,7 @@
     width: 100%;
 }
 
-.btn{
-    background: @btn-bg-color;
-    color: white;
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 8px 0;
-    width: 32%;
-    border-radius: 4px;
-    @media @phone{
-    width: 100%;
-    padding: 25px 0;
-    }
-    &:hover {
-        background-color: white;
-        color: @btn-bg-color;
-      }
+.btnstyle(@widthbtn, @fontsize){
+    width: @widthbtn;
+    font-size: @fontsize;
 }

@@ -5,25 +5,6 @@
 .w100 {
   width: 100%;
 }
-.btn {
-  background: #22283A;
-  color: white;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 8px 0;
-  width: 32%;
-  border-radius: 4px;
-}
-@media (max-width: 500px) {
-  .btn {
-    width: 100%;
-    padding: 25px 0;
-  }
-}
-.btn:hover {
-  background-color: white;
-  color: #22283A;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -306,6 +287,25 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  width: 32%;
+  font-size: 1.9rem;
+  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 25px 0;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
