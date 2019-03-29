@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive website and fully responsive website have similarities and differences. 
+- Both recognize that websites are now being accessed by various types of devices with various screen resolution. Both want to accommodate users experience when they are being accused.
+- Adaptive use HTML, pre-selected for different devices with different screen, while information and the designs may change depended on each accessing device
+- Fully responsive websites usually have one template design that detects the device’s resolution with @media queries and sized responsively to the screen. Because it has only one responsive template, the content is usually the same.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that the site is designed to be access in phone first, usually with tag like min-width. The responsive design is then scaled up with @media for desktop. While desktop is designed with the content in the desktop resolution first and scaled down for other devices, with tags like max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default px of web browser is often 16px, to make font-size designing more intuitive, it is scaled down to 10px, by declaring 62.5% (10/16=.625) as the default font size of the whole html page. Rem is root of em, which is based on html tag of now declared 10 px. So it’s now easier to know that if you want to use 16px, you can say 1.6rem
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a clearer and more efficient way of marking your CSS as it mimics the behavior of your HTML markup structure.  You still write in mostly CSS, but it has structures that only appear in a preprocessor. Your preprocessor is then compiled by a Javascript based compiler, like Less, into normal CSS. 
+It is more efficient not only in mimicking HTML nesting structure, but allow declaring reoccurring styling into variables and functions (parametric mixins ) and other behaviors, which make editing CSS much clearer and efficient.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+MY favorite concept in preprocessing is the @import function where you can divide your CSS into various pages to make editing even clearer. The most trouble would be just nesting into 3-4 layers, that often can make the mark-up prone to failure.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
